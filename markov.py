@@ -7,8 +7,9 @@ from count_syllables import count_syllables
 import tweepy
 
 #Authenticate to Twitter
-auth = tweepy.OAuthHandler("uBo37o1shuTVVtfnsImdR9zj4", "Xkax5mQiSQtW3cjNulsPvXXmlJfWuvlK3naYOsYuGylv32YGAY")
-auth.set_access_token("1266042423672737792-haNQ6BBsnNluRYvsOvGTZFqGnvgitB", "zJ38yvpom7ie3Re40dDr5HBqbIE1TMoEQWAz2QXphHfkB")
+#CHANGE THESE TO YOUR ACTUAL KEYS
+auth = tweepy.OAuthHandler("Consumer Key", "Secret Consumer Key")
+auth.set_access_token("Access Key", "Secret Access Key")
 
 # Create API object
 api = tweepy.API(auth)
